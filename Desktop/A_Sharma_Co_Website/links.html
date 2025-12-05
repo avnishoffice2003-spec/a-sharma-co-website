@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | A. Sharma & Co.</title>
+    <title>Useful Links | A. Sharma & Co.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -74,106 +74,101 @@
         </div>
     </header>
 
-    <section class="section-padding contact-hero bg-light-blue">
+    <section class="section-padding links-hero bg-primary">
         <div class="container text-center">
-            <h1>Start Your Confidential Consultation Today.</h1>
-            <p class="lead-text">We are ready to listen. Connect with our expert team using your preferred channel below.</p>
+            <h1>Curated Regulatory & Legal Resource Hub</h1>
+            <p class="lead-text">Quick access to essential government portals, judicial bodies, and key regulatory acts required for corporate compliance in India.</p>
         </div>
     </section>
 
-    <section class="section-padding contact-details-section">
+    <section class="section-padding link-grid-section">
         <div class="container">
-            <div class="contact-grid">
+            <h2 class="text-center">Essential Compliance & Legal Portals</h2>
+            <p class="text-center subtitle">A simplified directory of resources used daily by our expert consultants.</p>
+
+            
+<div class="search-utilities">
+            <input type="text" id="linkSearch" placeholder="Filter links by name or description..." class="link-search-input">
+            
+            <button id="printLinks" class="btn btn-secondary btn-small btn-print">
+                Print Resource List <i class="fas fa-print"></i>
+            </button>
+        </div>
+<div class="link-categories-grid">
                 
-                <div class="contact-form-wrapper">
-                    <h2>Send Us a Message</h2>
-                    
-                    <form name="contact" method="POST" action="/success.html" data-netlify="true" class="full-contact-form">
-                        
-                        <div class="form-row">
-                            <input type="text" id="name" name="name" placeholder="Full Name*" required>
-                            <input type="email" id="email" name="email" placeholder="Email Address*" required>
-                        </div>
-                        
-                        <div class="form-row">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                            <input type="text" id="subject" name="subject" placeholder="Subject (e.g., GST Query)" required>
-                        </div>
+                <div class="link-category">
+                    <h3 class="category-title"><i class="fas fa-gavel"></i> Corporate Governance & Filing</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://www.mca.gov.in/" target="_blank">Ministry of Corporate Affairs (MCA)</a>
+                            <p>Official portal for all company formations, regulatory filings (ROC), and compliance forms.</p>
+                        </li>
+                        <li>
+                            <a href="https://nclt.gov.in/" target="_blank">National Company Law Tribunal (NCLT)</a>
+                            <p>Tribunal for matters related to the Companies Act, Insolvency, and Mergers/Amalgamations.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.sebi.gov.in/" target="_blank">Securities and Exchange Board of India (SEBI)</a>
+                            <p>Regulator for the securities market and compliance for listed companies.</p>
+                        </li>
+                    </ul>
+                </div>
 
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your needs and compliance goals..." required></textarea>
-                        
-                        <button type="submit" class="btn btn-primary submit-btn">Submit Confidential Inquiry</button>
-                    </form>
-                    </div>
-                
-                <div class="contact-info-wrapper">
-                    
-                    <h3>Our Virtual & Physical Presence</h3>
-                    
-                    <div class="info-block">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Call or Message Us</h4>
-                            <p>Mobile: +91-8126828661, +91-9557513775</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-block">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email Us Directly</h4>
-                            <p>csavnishsharma@gmail.com</p>
-                            <p>avnishoffice2003@gmail.com</p>
-                        </div>
-                    </div>
+                <div class="link-category">
+                    <h3 class="category-title"><i class="fas fa-chart-line"></i> Taxation & Finance</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank">Income Tax Department</a>
+                            <p>Official portal for Income Tax, TDS, PAN, and e-filing services.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.gst.gov.in/" target="_blank">GST Portal</a>
+                            <p>The primary platform for Goods and Services Tax registration, returns, and compliance.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.cbic.gov.in/" target="_blank">Central Board of Indirect Taxes & Customs (CBIC)</a>
+                            <p>Apex body for administering Customs, GST, and Central Excise matters.</p>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="info-block">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Consultation Location</h4>
-                            <p><strong>Office Address:</strong> *Currently Vacant - Consultation By Appointment*</p>
-                            <p class="small-text">All meetings are conducted via secure virtual channels (Zoom/Meet).</p>
-                        </div>
-                    </div>
+                <div class="link-category">
+                    <h3 class="category-title"><i class="fas fa-globe"></i> Foreign Exchange & Banking</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://www.rbi.org.in/" target="_blank">Reserve Bank of India (RBI)</a>
+                            <p>Central banking institution regulating monetary policy and FEMA compliance.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.ibbi.gov.in/" target="_blank">Insolvency and Bankruptcy Board of India (IBBI)</a>
+                            <p>Regulator for the implementation of the Insolvency and Bankruptcy Code (IBC), 2016.</p>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="map-placeholder">
-                        <p>Map Placeholder - Location Visualisation</p>
-                        </div>
+                <div class="link-category">
+                    <h3 class="category-title"><i class="fas fa-book"></i> Key Legal Acts & Legislation</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html?act=NTk2MQ==" target="_blank">Companies Act, 2013</a>
+                            <p>Full text of the core corporate law governing incorporation, director duties, and reporting.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.indiacode.nic.in/" target="_blank">India Code Portal</a>
+                            <p>Central repository of all Indian Union and State Laws (essential legal research tool).</p>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
         </div>
     </section>
-
-    <section class="confidentiality-section bg-dark">
-        <div class="container">
-            <div class="confidentiality-assurance">
-                <i class="fas fa-lock"></i>
-                <div>
-                    <h4>100% Confidentiality Guaranteed</h4>
-                    <p>All inquiries are treated with the strictest confidentiality and professionalism, adhering to legal and ethical standards.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding bg-light-blue final-checklist">
+    
+    <section class="section-padding bg-dark final-cta">
         <div class="container text-center">
-            <h2>Prepare for Your First Consultation</h2>
-            <div class="checklist-grid">
-                <div class="checklist-item">
-                    <i class="fas fa-file-alt"></i>
-                    <p><strong>Gather Documents:</strong> Have relevant notices, corporate filings, or business data ready.</p>
-                </div>
-                <div class="checklist-item">
-                    <i class="fas fa-question-circle"></i>
-                    <p><strong>Define Goals:</strong> Clearly outline the specific outcome you need from the consultation.</p>
-                </div>
-                <div class="checklist-item">
-                    <i class="fas fa-clock"></i>
-                    <p><strong>Time Allocation:</strong> Ensure you have 30-45 minutes dedicated for the initial detailed discussion.</p>
-                </div>
-            </div>
+            <h2>Need Expert Guidance on Any of These Regulations?</h2>
+            <p>Don't navigate complex portals alone. Contact us to ensure perfect compliance.</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Schedule Your Consultation</a>
         </div>
     </section>
 <footer class="main-footer">
