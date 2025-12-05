@@ -717,7 +717,6 @@ h3 { font-size: 1.8em; }
     max-height: 500px; /* Large value to ensure content fits */
     padding: 0 20px 20px 20px; /* Padding for the bottom of the answer */
 }
-}
 /* --- 6. Embedded Contact Form CTA Strip Styling --- */
 
 .cta-form-strip {
@@ -1900,4 +1899,115 @@ document.addEventListener('DOMContentLoaded', () => {
 
 .logo-container a:hover .logo-text {
     transform: perspective(500px) rotateY(2deg); /* Gentle 3D tilt */
+}
+/* State when the accordion item is OPEN (handled by JS) */
+.faq-item.open .faq-answer {
+    max-height: 500px; /* Large value to ensure content fits */
+    padding: 0 20px 20px 20px; /* Padding for the bottom of the answer */
+}
+/* Ensure the closing brace for the previous CSS block is where it belongs */
+.mega-menu {
+    opacity: 0;
+    visibility: hidden; /* Hides the menu when not hovering */
+    /* ... rest of positioning code ... */
+}
+.main-nav ul li.nav-services-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible; /* Makes the menu appear on hover */
+}
+/* 3. Style and hide the Mega Menu Panel */
+.mega-menu {
+    /* CRITICAL FIXES FOR DISPLAY */
+    opacity: 0;
+    visibility: hidden; 
+    
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    /* Keep centering transform */
+    transform: translateX(-50%); 
+    
+    /* CHANGE 1: Reduced width for vertical stacking */
+    width: 350px; 
+    
+    background: var(--background-light); 
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 990; 
+    border-top: 3px solid var(--secondary-color); 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mega-menu-content {
+    /* CHANGE 2: Replace 'display: flex' with 'display: block' to stack columns */
+    display: block; 
+    /* The 'justify-content' line will be ignored now */
+}
+
+.menu-column {
+    /* CHANGE 3: Set column to full width (100%) and add vertical separation */
+    width: 100%; 
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Added separator for clarity */
+}
+
+/* ADDED: Remove the separator on the last column for a clean edge */
+.menu-column:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* The hover logic remains correct */
+.main-nav ul li.nav-services-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible; 
+}
+.mega-menu {
+    /* ... existing code ... */
+    transform: translateX(-50%);
+    width: 350px; /* NEW: Reduced width */ 
+    background: var(--background-light);
+    /* ... existing code ... */
+}
+.mega-menu-content {
+    /* CHANGED: Remove flex, use block to stack columns */
+    display: block; 
+}
+
+.menu-column {
+    /* CHANGED: Use full width and add vertical spacing/separator */
+    width: 100%; 
+    margin-bottom: 20px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.menu-column:last-child {
+    border-bottom: none; /* Remove separator on the last column */
+    margin-bottom: 0;
+}
+
+.menu-column h4 {
+    /* Keep existing styling for category titles */
+}
+
+.menu-column ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.menu-column ul li a {
+    padding: 5px 0;
+    display: block; /* Make links full width */
+    font-weight: 400;
+    color: var(--text-dark);
+    transition: color 0.2s;
+}
+
+.menu-column ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
